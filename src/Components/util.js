@@ -19,14 +19,14 @@ export const project = [
     tools: "ReactJS,Tailwind CSS",
     img: port,
     icon: aicon,
-    link: "https://github.com/Rubin737/Swiggy-app-clone",
+    link: "https://github.com/Rubin737/Personal-portfolio",
   },
   {
     name: "Amazon Clone",
     tools: "JavaScript,HTML,CSS",
     img: p1,
     icon: aicon,
-    link: "https://github.com/Rubin737/Personal-portfolio",
+    link: "https://github.com/Rubin737/Amazon-Clone-",
   },
   {
     name: "Rock Paper Scissors",
