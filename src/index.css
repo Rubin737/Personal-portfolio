@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #161513; */
+  /* background-color: #111827; */
+  background-color: #1F2937;
+  /* color:rgb(216, 214, 214); */
+  
+  
+
+  color: white;
+  scroll-behavior: smooth;
+  font-family: 'outfit';
+}
+.gradient {
+  @apply bg-gradient-to-r from-[#da7c25] to-[#B923E1];
+}
+.button{
+  @apply text-lg gradient px-4 py-2 font-outfit font-bold  rounded-full border-0 transition duration-500 hover:scale-105;
+}
+.gradient-text {
+  background: linear-gradient(270deg, #DF8908 10%, #B41588 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.button-logic{
+  @apply  cursor-pointer hover:border-red-500  hover:border-2
+}
+.score-bar{
+  @apply pt-5 flex flex-col justify-center gap-2;
+}
+/* .icon-bar{
+  @apply flex items-center gap-1.8
+} */
+
+.font-size{
+  @apply text-lg font-semibold font-pla;
+}
+.box-shadow{
+  @apply shadow-[0_4px_15px_rgba(255,0,0,0.6),0_-4px_15px_rgba(0,255,0,0.6),4px_0_15px_rgba(0,0,255,0.6)]
+}
+.border-contact{
+  @apply border-2 py-3 pl-3 pr-10 bg-gray-300 rounded-md;
+}
+.heading{
+  @apply lg:text-5xl md:text-4xl md:font-bold text-2xl font-bold  lg:font-bold md:bg-none bg-gradient-to-r from-[#da7c25] to-[#B923E1]   py-3 lg:bg-opacity-0 text-center;
+}
+.only-heading{
+  @apply lg:text-5xl md:text-4xl md:font-bold text-2xl font-bold sm:text-yellow-400 text-black  lg:font-bold md:bg-none
+}
+.about-shadow{
+  @apply shadow-md;
+}
+.side-bar{
+  @apply border-b-2 text-cyan-400;
+}
