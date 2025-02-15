@@ -46,20 +46,23 @@ export const Contact = ()=>{
                    <div className='flex flex-row gap-5 items-center'><img width={30} src={mail} alt="" /><p>rubin262002@gmail.com</p></div>
                    <div className='flex flex-row gap-5 items-center'><img width={30} src={location} alt="" /><p>Chennai</p></div>
                 </div>
-                <form onSubmit={onSubmit} className='flex flex-col gap-5 md:w-[50%] w-full flex-start justify-center'>
-                  <p className='sm:text-xl texl-lg '>Your Name</p>
-                  <input type="text" placeholder='Enter Your Name'className='border-contact  text-black' />
-                  <p className='sm:text-xl texl-lg'>Your Email Address</p>
-                  <input type="text" placeholder='Your Mail'className='border-contact text-black' />
-                  <p className='sm:text-xl texl-lg '>Write Your Message Here</p>
-                  <input  type="text" placeholder='Enter Your Message' className='border-2 py-3 pl-3 sm:pb-32 pb-24 text-xl text-black bg-gray-300 rounded-sm'/>
-                  <div className='flex lg:justify-start items-center justify-center'>
-                  <button onClick={()=>{
-                    setButton("Message sent successfully!");
-                    setTimeout(() => setButton("Submit now"), 2000);
-                  }} className='button'>{button}</button>
-                  </div>
-                </form>
+                <form name="contact" method="POST" data-netlify="true" onSubmit={onSubmit} className='flex flex-col gap-5 md:w-[50%] w-full flex-start justify-center'>
+  <input type="hidden" name="form-name" value="contact" />
+
+  <p className='sm:text-xl texl-lg '>Your Name</p>
+  <input type="text" name="name" placeholder='Enter Your Name' className='border-contact text-black' required />
+
+  <p className='sm:text-xl texl-lg'>Your Email Address</p>
+  <input type="email" name="email" placeholder='Your Mail' className='border-contact text-black' required />
+
+  <p className='sm:text-xl texl-lg '>Write Your Message Here</p>
+  <textarea name="message" placeholder='Enter Your Message' className='border-2 py-3 pl-3 sm:pb-32 pb-24 text-xl text-black bg-gray-300 rounded-sm' required />
+
+  <div className='flex lg:justify-start items-center justify-center'>
+    <button type="submit" className='button'>{button}</button>
+  </div>
+</form>
+
             </div>
         </section>
         </>
