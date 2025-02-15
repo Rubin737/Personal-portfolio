@@ -5,9 +5,9 @@ import js from '../assets/skills/js.png';
 import re from '../assets/skills/atom.png';
 import git from '../assets/skills/git.png';
 import tail from '../assets/skills/tw.png';
-import cv from '../assets/cv.pdf';
 import pencil from '../assets/pencil.png';
 import nodejs from '../assets/skills/nodejs_col.png'
+const cv = './public/CV.pdf';
 
 export const About = ()=>{
     return(
